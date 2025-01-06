@@ -10,11 +10,15 @@
     <div class="container">
         <h1>Te ayudaré a elegir una habilidad!</h1>
         <div class="tool-box">
-            <p id="tool-display" style="visibility: hidden;">Presiona el botón para obtener una herramienta</p>
-            <div id="spinner" style="display: none;">
-                <div class="spinner"></div>
+            <div id="roulette" class="hidden"></div>
+            <p id="tool-display" class="hidden">Hacé click en alguna de las categorías</p>
+            <div class="category-buttons">
+                <button onclick="selectCategory(1)">Imaginación</button>
+                <button onclick="selectCategory(2)">Acciones relajantes</button>
+                <button onclick="selectCategory(3)">Poniendonos en movimiento</button>
+                <button onclick="selectCategory(4)">Con los sentidos</button>
+                <button onclick="selectCategory(5)">Para distraernos</button>
             </div>
-            <button onclick="startAnimation()">Comencemos!</button>
         </div>
     </div>
     <script src="script.js"></script>
